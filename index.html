@@ -3,6 +3,16 @@
         <link rel="stylesheet" href="/styles/index.css" type="stylesheet">
     </head>
     <body>
-
+        <main>
+            <h1>Hello There!</h1> 
+            <a href="#">and again!</a>
+            <button class="theme-toggle" onclick="toggleTheme()">Theme Toggle</button>
+        </main>
     </body>
+    <script>
+        function toggleTheme() {
+            var html = document.querySelector("html")
+            html.dataset.theme = html.dataset.theme && html.dataset.theme === "dark" ? "light" : "dark";
+        }
+    </script>
 </html>
